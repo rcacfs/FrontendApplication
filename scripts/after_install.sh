@@ -7,7 +7,7 @@ cd /app
 npm install
 npm run build
 # Ensure the build directory exists and copy build files to the Nginx root directory
-rm -rf /var/www/html/* # Remove existing files in Nginx root directory
+#rm -rf /var/www/html/* # Remove existing files in Nginx root directory
 cp -r build/* /var/www/html
 
 # Install PM2 globally (only if you're running a Node.js backend, otherwise this can be omitted)
